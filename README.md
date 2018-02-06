@@ -17,7 +17,7 @@ Open the program, when prompted select the NPWR folder,
 then select the decrypted TRP, and finally a place to save the patched VPK.
 
 this will create a patched copy of the game RETRO CITY RAMPAGE DX
-(smallest game i could find that had trophys, alot of files removed so its basicly unplayable, but works for this purpose!)
+(smallest game i could find that had trophys, alot of files removed to reduce filesize, its basicly unplayable, but works for this purpose!)
 
 once your on the title screen run TROPHAX and youll see trophys of the incompadible game unlock!
 
