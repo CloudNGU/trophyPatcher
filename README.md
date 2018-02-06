@@ -20,3 +20,5 @@ this will create a patched copy of the game RETRO CITY RAMPAGE DX
 (smallest game i could find that had trophys, alot of files removed so its basicly unplayable, but works for this purpose!)
 
 once your on the title screen run TROPHAX and youll see trophys of the incompadible game unlock!
+
+Credit to @motoharu-gosuto for Trophy Decryption!
