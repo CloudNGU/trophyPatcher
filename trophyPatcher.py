@@ -2,13 +2,13 @@ import Tkinter
 import tkFileDialog
 import tkMessageBox
 import shutil
-
+import sys
 import os
 import zipfile
-
 import binascii
 
 
+os.chdir(os.path.dirname(os.path.realpath(__file__)))
 def zip(src, dst): #Stolen from PSVIMGTOOLS-FRONTEND (which probably stole it from StackOverflow)
     zf = zipfile.ZipFile("%s" % (dst), "w", zipfile.ZIP_DEFLATED,allowZip64 = True)
     abs_src = os.path.abspath(src)
@@ -33,8 +33,12 @@ trophyVPK = tkFileDialog.asksaveasfilename(title="VPK File",filetypes=[('Vita Pa
 
 if trophyVPK.endswith("\\") or trophyVPK.endswith("/"):
     trophyVPK = trophyVPK[:-1]
-
-os.system(os.path.dirname(os.path.realpath(__file__))+'/psvpfsparser --title_id_src="'+trophyFolder+'" --title_id_dst="'+trophyFolder+'_decrypted" --f00d_url=cma.henkaku.xyz')
+    
+    
+if sys.platform.__contains__("win"):
+    os.system('psvpfsparser.exe --title_id_src="'+trophyFolder+'" --title_id_dst="'+trophyFolder+'_decrypted" --f00d_url=cma.henkaku.xyz')
+else:
+    os.system('./psvpfsparser --title_id_src="'+trophyFolder+'" --title_id_dst="'+trophyFolder+'_decrypted" --f00d_url=cma.henkaku.xyz')
 
 trpData = open(trophyFolder+"_decrypted/TRPTRANS.DAT","rb").read()
 npCommSign = trpData[400:560]
