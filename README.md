@@ -21,6 +21,6 @@ this will create a patched copy of the game RETRO CITY RAMPAGE DX
 
 once your on the title screen run TROPHAX and youll see trophys of the incompadible game unlock!
 
-(if you get an NP error followed by "Cannot Start The Application, on the modded game, delete the origianl trophy set from ur0:user/00/trophy!)
+(if you get an NP-6183-8, error followed by "Cannot Start The Application", on the modded game, delete the origianl trophy set from ur0:user/00/trophy/data/!)
 
 Credit to @motoharu-gosuto for Trophy Decryption!
