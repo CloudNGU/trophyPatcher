@@ -26,13 +26,25 @@ window = Tkinter.Tk()
 window.wm_withdraw()
 tkMessageBox.showinfo(title="NPWR FOLDER",message="Please select the incompadible game's NPWR Folder\n(trophy/data/NPWRXXXX)")
 trophyFolder = tkFileDialog.askdirectory(title="Trophy Folder")
+if not os.path.exists(trophyFolder+"/TRPTRANS.DAT"):
+    tkMessageBox.showerror(title="NPWR FOLDER", message="Wrong Folder! its located at\nur0:user/00/trophy/data\nand contains the files\n'TRPTRANS.DAT' and 'TRPTITLE.DAT'")
+    os._exit(0)
 tkMessageBox.showinfo(title=".TRP",message="Please select the incompadbile games DECRYPTED .TRP file\n(use vitashell, or mai/vitamin.)\n(sce_sys/trophy/TROPHY.TRP)")
 trophyTRP = tkFileDialog.askopenfilename(title="TRP File",filetypes=[('Trophy Data Files', '*.TRP')])
+
+if not open(trophyTRP,"rb").read().startswith("\xDC\xA2\x4D"): #idiot protection
+    tkMessageBox.showerror(title=".TRP",message="This TRP File Is Invalid.. (encrypted?)")
+    os._exit(0)
+
 tkMessageBox.showinfo(title=".VPK",message="Please select where you would like the patched game's (.vpk) to be saved.")
 trophyVPK = tkFileDialog.asksaveasfilename(title="VPK File",filetypes=[('Vita Package', '*.vpk')])
 
 if trophyVPK.endswith("\\") or trophyVPK.endswith("/"):
     trophyVPK = trophyVPK[:-1]
+
+if not trophyVPK.upper().endswith(".VPK"):
+    trophyVPK = trophyVPK + ".vpk"
+
     
     
 if sys.platform.__contains__("win"):
