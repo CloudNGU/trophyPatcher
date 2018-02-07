@@ -53,8 +53,8 @@ gameEboot = open(os.path.dirname(os.path.realpath(__file__))+'/toMod/eboot.bin',
 gameEboot = gameEboot.replace(gameNpCommId,npCommId[:-3])
 gameEboot = gameEboot.replace(gameNpCommSign,npCommSign)
 
+os.makedirs(trophyVPK+"_temp/sce_sys/trophy/"+npCommId)
 open(trophyVPK+"_temp/eboot.bin","wb").write(gameEboot)
-os.mkdir(trophyVPK+"_temp/sce_sys/trophy/"+npCommId)
 shutil.copy(trophyTRP,trophyVPK+"_temp/sce_sys/trophy/"+npCommId+"/TROPHY.TRP")
 
 zip(trophyVPK+"_temp",trophyVPK)
