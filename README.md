@@ -7,7 +7,7 @@ from there you just need to run TROPHAX and you can unlock all trophies in that 
 What you need:
 
 The NPWR folder (can be any%).
-ur0:user/00/trophy/data/NPWRXXXX
+ur0:user/00/trophy/data/NPWRXXXX OR the decrypted eboot.bin of the game (doesnt allways work!)
 
 The Decrypted .TRP (use VitaShell's "Open Decrypted" on the app folder, or Mai/Vitamin)
 ux0:app/PCSXXXXX/sce_sys/trophy/TROPHY.TRP
