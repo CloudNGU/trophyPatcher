@@ -2,7 +2,7 @@
 Make games incompatible with TROPHAX work.
 
 This program works by taking the trophy set of an incompadile game and making it load in a compadible one,
-from there you just need to run TROPHAX and you can unlock all trophies in that game!
+from there you just need to run TROPHAX and you can unlock all trophies in that game! or. just unlock them from within the app itself.
 
 What you need:
 
@@ -21,6 +21,6 @@ this will create a patched copy of the NP_TROPHY sample.
 Press X to run the sample, wait for trophys to setup and run trophax OR. press X and unlock whatever trophy you want,
 you dont NEED trophax to use this!
 
-(if you get an NP-6183-8, error followed by "Cannot Start The Application", on the modded game, delete the origianl trophy set from ur0:user/00/trophy/data/!)
+(if you get an NP-6183-8, error followed by "Cannot Start The Application", on the np_trophy sample, delete the original trophy set from ur0:user/00/trophy/data/! also please note NP-6172-6	means the trophy is allredy unlocked) 
 
 Credit to @motoharu-gosuto for Trophy Decryption!
