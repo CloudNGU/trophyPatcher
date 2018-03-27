@@ -16,10 +16,10 @@ ux0:app/PCSXXXXX/sce_sys/trophy/TROPHY.TRP
 Open the program, when prompted select the NPWR folder, 
 then select the decrypted TRP, and finally a place to save the patched VPK.
 
-this will create a patched copy of the game RETRO CITY RAMPAGE DX
-(smallest game i could find that had trophys, alot of files removed to reduce filesize, its basicly unplayable, but works for this purpose!)
+this will create a patched copy of the NP_TROPHY sample.
 
-once your on the title screen run TROPHAX and youll see trophys of the incompadible game unlock!
+Press X to run the sample, wait for trophys to setup and run trophax OR. press X and unlock whatever trophy you want,
+you dont NEED trophax to use this!
 
 (if you get an NP-6183-8, error followed by "Cannot Start The Application", on the modded game, delete the origianl trophy set from ur0:user/00/trophy/data/!)
 
