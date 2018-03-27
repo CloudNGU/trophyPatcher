@@ -78,8 +78,8 @@ elif trophySelf != '':
     except:
         tkMessageBox.showerror(title="Eboot.bin", message="NpCommSign or NpCommId was not found in the eboot")
         os._exit(0)
-gameNpCommSign = binascii.unhexlify("b9dde13b01000000000000003cc3f8965e6643e6c9dcfa5615cadd856f6d064ba62ec13ff0fc79cd6b7d02c230939eb7fec017e84d43c47567ad592d27907cdf2b37c2a8b71ecc616465988113b7a6e6b8ea16bdd08af63cc27c449a91821f8a6a27e597db162cc5fd9b4052ae8f6de6b5341814da2d9004fc4ea4174bfbc0fa3f433d1c6126197389c07ac407988e9cde77edcc3e61c5cc04799602573459fc")
-gameNpCommId = "NPWR07688"
+gameNpCommSign = binascii.unhexlify("b9dde13b01000000000000001efa85f5b119c4750aa408e9d8b86f833a0bb0a11f0fda592926ca8c5ef715638930dce4b53c710eddb5b92f7c0cecc6e861d1da194f7724fbdbc7856b9d429065bde7f1dc2c7b9b36296e046260caa495945ead22d9f10be6410c02312390b51a013c8924ec4827c4b3f97d5e74f6be1cb86257e1f4263a8d85a20a80937f773d4146b2f24224c9f9ee53406aaf5881043e7099")
+gameNpCommId = "NPXS00032"
 
 shutil.copytree(os.path.dirname(os.path.realpath(__file__))+'/toMod',trophyVPK+"_temp")
 
